@@ -1,0 +1,95 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNEezS3I4aDueyXRzsyuh4c",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Mohammadkaviany/MachineLearning/blob/main/Exercises\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "K0uZ-hL8RVke"
+      },
+      "outputs": [],
+      "source": [
+        "! git clone https://github.com/Mohammadkaviany/MachineLearning.git"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Exercise 1 \n",
+        "\n",
+        "Writting a program to calculate n!"
+      ],
+      "metadata": {
+        "id": "2JG2aCi5UPdO"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = int(input())\n",
+        "\n",
+        "def fact(x):\n",
+        "  if (x == 0) or (x==1):\n",
+        "    return 1\n",
+        "  \n",
+        "\n",
+        "  else :\n",
+        "    return (x * fact(x-1))\n",
+        "\n",
+        "fact(a)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "hLxYAa5fSDnq",
+        "outputId": "69c458e1-bfe2-4929-8ff2-1ff6651e3f27"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "6\n"
+          ]
+        },
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "720"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 11
+        }
+      ]
+    }
+  ]
+}
